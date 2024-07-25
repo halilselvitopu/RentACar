@@ -24,12 +24,12 @@ namespace Business.Concrete
 
         public IResult Add(Colour colour)
         {
-            throw new NotImplementedException();
+            return new SuccessResult(Messages.EntityAdded);
         }
 
         public IResult Delete(Colour colour)
         {
-            throw new NotImplementedException();
+            return new SuccessResult(Messages.EntityDeleted);
         }
 
         public IDataResult<List<Colour>> GetAll()
@@ -39,7 +39,7 @@ namespace Business.Concrete
 
         public IResult Update(Colour colour)
         {
-            throw new NotImplementedException();
+            return new SuccessResult(Messages.EntityUpdated);
         }
     }
 }

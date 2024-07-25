@@ -24,12 +24,12 @@ namespace Business.Concrete
 
         public IResult Add(Brand brand)
         {
-            throw new NotImplementedException();
+            return new SuccessResult(Messages.EntityAdded);
         }
 
         public IResult Delete(Brand brand)
         {
-            throw new NotImplementedException();
+            return new SuccessResult(Messages.EntityDeleted);
         }
 
         public IDataResult<List<Brand>> GetAll()
@@ -39,7 +39,7 @@ namespace Business.Concrete
 
         public IResult Update(Brand brand)
         {
-            throw new NotImplementedException();
+            return new SuccessResult(Messages.EntityUpdated);
         }
     }
 }
